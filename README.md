@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Para abrir o banco do prisma localmente, basta rodar o seguinte comando:
+
+- npx prisma studio
+
+Para criar relacionamentos de maneira automatica no arquivo .prisma, basta ir no format on save do vscode e colocar a opção Prisma.
+
+Para subir toda e qualquer alteração feita no schema do prima, basta rodar o seguinte comando:
+
+- npx prisma db push
+
+Após subir as alterações do prisma, é necessario também gerar os tipos da mesma no typescript, logo, rode o seguinte comando em seguida:
+
+- npx prisma generate
