@@ -10,6 +10,15 @@ const Dialog = DialogPrimitive.Root;
 
 const DialogTrigger = DialogPrimitive.Trigger;
 
+declare module "@radix-ui/react-dialog" {
+  export interface DialogPortalProps {
+    children?: React.ReactNode;
+    container?: PortalProps["container"];
+    forceMount?: true;
+    className?: string;
+  }
+}
+
 const DialogPortal = ({
   className,
   ...props
